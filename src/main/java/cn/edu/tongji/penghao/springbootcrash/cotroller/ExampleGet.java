@@ -23,7 +23,7 @@ public class ExampleGet {
         return "I can hear from you";
     }
     @RequestMapping("method/path/var")
-    //http://localhost:8080/api/v1/get/method/path/var?number=205338&name=ph
+    //http://localhost:8080/api/v1/get/method/path/var?number=xxx&name=xxx
     public String pathGetExampleV1(String number, String name) {
         return "Here is " + number + " " + name;
     }
@@ -44,8 +44,8 @@ public class ExampleGet {
     @RequestMapping("user")
     public UserEntity getUser() {
         UserEntity user = new UserEntity();
-        user.setId(2053381);
-        user.setName("wang");
+        user.setId(xxx);
+        user.setName("xxx");
         user.setPassword("4564156");
         return user; // 返回一个json格式的对象，相当于后端传到前端（？maybe），前端到后端存储就需要post了
     }
